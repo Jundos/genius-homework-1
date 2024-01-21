@@ -6,26 +6,87 @@
 }
 
 /* Base */
+
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  width: 1440px;
+  padding: 0px;
+  margin: 0px auto;
+  display: block;
+}
+
+header {
+  position: absolute;
+  width: inherit;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Text decoration */
+.decoration-underline {
+  text-decoration-line: underline;
+}
+
+.accent {
+  color: var(--color-brand-light);
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
+
+/* Traditions-text*/
+.traditions-text .uppercase {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.traditions-text .brand {
+  color: var(--color-brand-light);
+}
+
+/* Bakery Logo */
+.bakery-logo {
+  width: 114px;
+  color: var(--color-primary-light);
+  font-family: "Gill Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 /* Button */
 .button {
   color: var(--color-primary-light);
+  background: var(--color-brand-light);
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
-  background: var(--color-brand-light);
+  padding: 16px 32px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .button:hover {
   color: var(--color-brand-dark);
-  background-color: transparent;
+  background-color: var(--color-primary-light);
 }
 
 /* Link */
@@ -38,30 +99,64 @@ ul {
   color: #819b57;
 }
 
+/* Header section */
+
+#header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 152px;
+  padding-top: 33.5px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+/* Main section */
+#main-section {
+  background-image: linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(/images/people-in-bakery.png);
+  background-repeat: no-repeat;
+  background-size: 1440px 736px;
+  height: 835px;
+  width: 1440px;
+}
+
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
-}
-
-.hero-title .accent {
-  color: var(--color-brand-light);
+  text-align: center;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: relative;
+  top: 272px;
 }
 
 /* Advantages section */
-.advantages-list {
+#advantages-div {
   background-color: var(--color-brand-light);
   color: var(--color-primary-light);
+  position: absolute;
+  top: 736px;
+  width: inherit;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.accent {
-  color: var(--color-brand-light);
-}
-
-.section-title .accent {
-  color: var(--color-brand-dark);
-}
-
-/* Text decoration */
-.decoration-underline {
-  text-decoration-line: underline;
+.advantages-list {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 160px;
+  display: inline-flex;
+  padding: 16px 0px;
 }
